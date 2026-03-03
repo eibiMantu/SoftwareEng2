@@ -17,7 +17,7 @@ public class Telco implements TelcoSubscription {
     }
 
     @Override
-    public String accept(UnliCallOffer unliPackage, boolean unliCallText) {
+    public String accept(UnliCallsTextOffer unliPackage, boolean unliCallText) {
         return unliPackage.showUnliCallsTextOffer(this.telcoName, unliCallText);
     }
 
