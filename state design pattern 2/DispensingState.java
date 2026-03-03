@@ -11,5 +11,5 @@ public class DispensingState implements VendingMachineState {
     // Other methods print "Please wait, dispensing..."
     @Override public void selectItem(VendingMachine m) { System.out.println("Busy dispensing."); }
     @Override public void insertCoin(VendingMachine m) { System.out.println("Busy dispensing."); }
-    @Override public void setOutOfOrder(VendingMachine m) { machine.setState(machine.getOutOfOrderState()); }
+    @Override public void setOutOfOrder(VendingMachine m) { m.setState(m.getOutOfOrderState()); }
 }
